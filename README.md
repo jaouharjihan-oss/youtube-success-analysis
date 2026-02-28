@@ -1,89 +1,134 @@
-# youtube-success-analysis
-YouTube Success Analysis: Explore the key factors driving channel growth and estimated revenue to provide actionable insights for creators and digital marketers.
+# 🎥 YouTube Success Analysis  
 
-# YouTube Success Analysis
-
-## 🎯 Business Understanding
-In a digital environment dominated by content creation, understanding the success factors of YouTube channels is essential.  
-**Objective:** **Identify the variables influencing subscriber count and estimated revenue to provide strategic recommendations for creators and digital marketers.**
-
----
-
-# YouTube Success Analysis
-
-## 🎯 Business Understanding
-In a digital environment dominated by content creation, understanding the success factors of YouTube channels is essential.  
-**Objective:** **Identify the variables influencing subscriber count and estimated revenue to provide strategic recommendations for creators and digital marketers.**
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-purple)
+![NumPy](https://img.shields.io/badge/NumPy-1.x-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.x-orange)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Repo Size](https://img.shields.io/github/repo-size/jaouharjihan-oss/youtube-success-analysis)
 
 ---
 
-## 📊 Data Understanding
-**🎯 Objective:** **Understand the dataset structure and quality before analysis.**
+## 👩‍💻 Author
 
-**Typical actions:**
-- **Identify variables** (numerical, categorical, dates)
-- **Understand each column** (e.g., subscribers, revenue, category)
-- **Check data quality** (missing values, duplicates, inconsistencies)
-- **Examine dataset size** (records and features)
+**Jaouhar Jihan**  
+🔗 GitHub: https://github.com/jaouharjihan-oss  
 
 ---
 
-## 🧹 Data Cleaning (Data Preparation)
-**🎯 Objective:** **Prepare the data for analysis to avoid errors or biases.**
+## 📌 Project Overview
 
-**Typical actions:**
-- **Remove duplicates**
-- **Handle missing values** (drop or impute)
-- **Fix inconsistent formats** (dates, numbers, text)
-- **Detect and handle outliers**
+In today’s digital economy, YouTube is one of the most powerful platforms for content creation and monetization.
+
+This project analyzes the key factors driving **subscriber growth** and **estimated revenue** using a structured **Data Analytics workflow**.
+
+The objective is to generate **actionable insights** for content creators, digital marketers, and business decision-makers.
+
+---
+
+## 🎯 Business Objectives
+
+- Identify key drivers of channel growth  
+- Understand revenue distribution across categories  
+- Detect patterns in top-performing channels  
+- Provide data-driven strategic recommendations  
+
+---
+
+## 📊 Dataset Description
+
+Main variables include:
+
+- Subscribers  
+- Total Views  
+- Total Videos  
+- Channel Category  
+- Estimated Revenue  
+- Channel Creation Date  
+
+---
+
+## 🧹 Data Preparation
+
+- Duplicate removal  
+- Missing value handling  
+- Outlier detection  
+- Feature transformation  
+- Data type standardization  
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
-**🎯 Objective:** **Explore patterns, trends, and relationships between variables.**
 
-**Typical actions:**
-- **Analyze individual variables** (histograms, boxplots)
-- **Examine relationships** (scatter plots, correlation)
-- **Visualize multivariate patterns** (heatmaps, pairplots)
-- **Detect anomalies and trends**
-
----
-
-## 🛠️ Feature Engineering
-**🎯 Objective:** **Create or transform variables to improve analysis and modeling.**
-
-**Typical actions:**
-- **Encode categorical variables** (e.g., channel category)
-- **Normalize or standardize numerical values**
-- **Create new variables** (e.g., videos_per_month = total_videos / months_active)
-- **Select relevant features** for modeling
+- Subscriber distribution analysis  
+- Revenue comparison across categories  
+- Correlation heatmaps  
+- Scatter analysis (Subscribers vs Views / Revenue)  
+- Top 1% channel performance analysis  
 
 ---
 
-## 📊 Visualisation & Storytelling
+## 📊 Results & Visualizations
 
-**🎯 Objectif :** **Communiquer les insights clés du dataset de manière visuelle et impactante.**
+Key findings supported by visual analysis:
 
-**Actions typiques :**
-- **Visualiser la distribution des chaînes par nombre d'abonnés** (histogrammes, boxplots)
-- **Comparer les revenus estimés selon les catégories** (barplots, violin plots)
-- **Explorer les relations entre variables clés** (scatter plots abonnés vs vues, abonnés vs revenus)
-- **Mettre en avant les chaînes les plus performantes** (top 1% par abonnés ou revenus)
-- **Créer des graphiques attractifs pour le storytelling** (heatmaps, pairplots, dashboards simples)
-- **Annoter les insights importants** directement sur les graphiques pour raconter l’histoire des données
+- 📈 Strong positive correlation between total views and estimated revenue  
+- 🎯 High upload frequency contributes to subscriber growth  
+- 🏆 Certain categories dominate both views and revenue  
+- 📊 Top 1% channels follow consistent publishing strategies  
+
+(Visual outputs available in `/reports/figures/`)
 
 ---
 
-## 💡 Interpretation & Recommendations
+## 🧠 Machine Learning (Optional Extension)
 
-**🎯 Objective:** Translate insights into actionable recommendations for YouTube creators and marketers.
+To extend the analysis, a predictive model can be implemented:
 
-**Typical actions:**
-- **Highlight key factors** that drive growth (views, total videos, categories)
-- **Provide strategic advice** for creators:
-  - Increase posting frequency
-  - Focus on high-performing categories
-  - Analyze top-performing channels
-- **Visualize insights** for clear communication (barplots, scatter plots, heatmaps)
-- **Support marketing decisions** with data-driven evidence
+- 🎯 Target Variable: Estimated Revenue  
+- 📌 Features: Subscribers, Views, Total Videos, Category  
+- 🤖 Models: Linear Regression, Random Forest Regressor  
+- 📊 Evaluation Metrics: R² Score, MAE, RMSE  
+
+This allows revenue prediction based on channel performance metrics.
+
+---
+
+## 💡 Business Recommendations
+
+- Increase content publishing consistency  
+- Focus on high-performing categories  
+- Optimize video production frequency  
+- Benchmark strategy against top-performing channels  
+
+---
+
+## 🏆 Project Structure
+
+```bash
+youtube-success-analysis/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_modeling.ipynb
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── visualization.py
+│   ├── feature_engineering.py
+│   ├── modeling.py
+│
+├── reports/
+│   ├── figures/
+│   ├── final_report.pdf
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
